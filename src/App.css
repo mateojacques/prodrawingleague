@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --accent: #ffd12d;
+  --solid-bg: #111111;
+  --muted: #404040;
+  --primary-button: #ffd12d;
+  --muted-button: #1d1d1d;
+  --button-text: #fff;
+
+  --font: "Goldman", cursive;
+  --dark-text: #111;
+  --light-text: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font);
+}
+
+button:focus,
+a:focus {
+  outline: none;
+}
+
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+a {
+  color: var(--light-text);
+  text-decoration: none;
+  transition: 0.15s ease;
+}
+
+a:hover {
+  color: var(--accent);
+}
+
+.App {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  color: var(--light-text);
+  background: url(./assets/login-bg.png) no-repeat;
+  background-size: cover;
+}
